@@ -1,13 +1,13 @@
 # flutter_s2
 
-本工程是看了一遍flutter中文网后,仿造 https://github.com/HackSoul/zhihu-flutter 所写
+本工程是看了一遍flutter中文网后,参照 https://github.com/HackSoul/zhihu-flutter 所写
 并不是在其基础上改造,因为是学习过程.在其基础上做了更好地封装和自己的理解,
-本人为安卓原生开发者,旨在学习ui绘制
+本人为安卓原生开发者,kotlin开发,nodejs  koa2,springboot 都有涉猎,该工程旨在学习flutter的ui绘制,dart语法对java很友好
 
 ## Getting Started
 
 以下是开发实现流程
-[documentation](https://flutter.io/).
+[documentation](https://flutterchina.club/).
 
 ##1.底部导航实现 BottomNavigationBar
 
