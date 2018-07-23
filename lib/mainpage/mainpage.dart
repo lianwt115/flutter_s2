@@ -3,6 +3,8 @@ import '../otherwidget/search_bar.dart';
 import '../config.dart';
 import '../otherwidget/care_tab.dart';
 import '../otherwidget/item.dart';
+import '../searchpage/searchpage.dart';
+import '../questionpage/questionpage.dart';
 class MainPage extends StatefulWidget{
 
 
@@ -24,6 +26,36 @@ class _MainPageState extends State<MainPage>{
 
   @override
   Widget build(BuildContext context) {
+
+    //search的点击行为
+    _searchbarClick(bool left){
+      print('_searchbarleftclick:$left');
+
+      switch(left){
+
+      //左边点击进入searchpage
+        case true:
+          Navigator.of(context).push(new MaterialPageRoute(
+              builder: (context) {
+                return new SearchPage();
+              }
+          ));
+
+          break;
+      //进入questionpage
+        case false:
+          Navigator.of(context).push(new MaterialPageRoute(
+              builder: (context) {
+                //可以给Widget传递参数
+                return new QuestionPage();
+              }
+          ));
+          break;
+
+      }
+    }
+
+
 
     return DefaultTabController(
       //长度
@@ -210,9 +242,6 @@ class _MainPageState extends State<MainPage>{
 
   }
 
-  //search的点击行为
-  _searchbarClick(bool left){
-    print('_searchbarleftclick:$left');
-  }
+
 
 }
